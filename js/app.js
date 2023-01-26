@@ -5,20 +5,23 @@ let userName = prompt('Hi there! What is your name?  ');
 alert('Hello ' + userName + ', lets see how well you know Kirk!');
 
 let totalScore = 0;
+
 //QUESTION 1
-let doILikeStarWars = prompt('First Question: Do I like Star Wars?  ').toLowerCase();
-if (doILikeStarWars === 'yes' || doILikeStarWars === 'y'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  totalScore++;
-}
-else if (doILikeStarWars === 'no' || doILikeStarWars === 'n'){
-  //console.log('Incorrect. I love star wars!');
-  alert('Incorrect. I love star wars!');
-}
-else{
-  //console.log('Sorry, that was an invalid answer to that question');
-  alert('Sorry, that was an invalid answer to that question');
+function q1() {
+  let doILikeStarWars = prompt('First Question: Do I like Star Wars?  ').toLowerCase();
+  if (doILikeStarWars === 'yes' || doILikeStarWars === 'y'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    totalScore++;
+  }
+  else if (doILikeStarWars === 'no' || doILikeStarWars === 'n'){
+    //console.log('Incorrect. I love star wars!');
+    alert('Incorrect. I love star wars!');
+  }
+  else{
+    //console.log('Sorry, that was an invalid answer to that question');
+    alert('Sorry, that was an invalid answer to that question');
+  }
 }
 
 //QUESTION 2
@@ -158,3 +161,5 @@ alert(`Finished! Your score for Kirks vacation questionnaire is ${100*(score/6)}
 //console.log('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 alert(`Your total score (from this whole questionnaire) for knowing about Kirk is a total of ${score+totalScore}/12, or a percentage of ${((score+totalScore)/12)*100}%`);
 alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
+
+q1();
