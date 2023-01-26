@@ -145,10 +145,11 @@ function q6() {
 }
 
 // QUESTION 7
+let score = 0;
 function q7() {
   let vacay = ['cancun', 'bora bora', 'florida', 'rome', 'greece', 'california'];
   let userGuess = prompt('Guess where I want to go on vacation (you have 6 guesses, and you will be scored): ').toLowerCase();
-  let score = 0;
+
   let userCorrect = false;
 
   for (let i = 5; i > 0; i--){
@@ -175,7 +176,7 @@ alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 
 q1();
 q2();
-q2();
+q3();
 q4();
 q5();
 q6();
