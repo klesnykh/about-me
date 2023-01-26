@@ -25,21 +25,22 @@ function q1() {
 }
 
 //QUESTION 2
-let doILikeChess = prompt('Question 2: Do I like Chess?  ').toLowerCase();
-if (doILikeChess === 'yes' || doILikeChess === 'y'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  totalScore++;
+function q2() {
+  let doILikeChess = prompt('Question 2: Do I like Chess?  ').toLowerCase();
+  if (doILikeChess === 'yes' || doILikeChess === 'y'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    totalScore++;
+  }
+  else if (doILikeChess === 'no' || doILikeChess === 'n'){
+    //console.log('Incorrect. I love CHESS!');
+    alert('Incorrect. I love Chess!');
+  }
+  else{
+    //console.log('Sorry, that was an invalid answer to that question');
+    alert('Sorry, that was an invalid answer to that question');
+  }
 }
-else if (doILikeChess === 'no' || doILikeChess === 'n'){
-  //console.log('Incorrect. I love CHESS!');
-  alert('Incorrect. I love Chess!');
-}
-else{
-  //console.log('Sorry, that was an invalid answer to that question');
-  alert('Sorry, that was an invalid answer to that question');
-}
-
 //QUESTION 3
 let doILikeSweets = prompt('Question 3: Do I like Sweets?  ').toLowerCase();
 if (doILikeSweets === 'yes' || doILikeSweets === 'y'){
@@ -163,3 +164,4 @@ alert(`Your total score (from this whole questionnaire) for knowing about Kirk i
 alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 
 q1();
+q2();
