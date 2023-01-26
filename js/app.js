@@ -60,19 +60,21 @@ function q3() {
 }
 
 //QUESTION 4
-let originCountry = prompt('Question 4: Whas my country of origin Ukraine?  ').toLowerCase();
-if (originCountry === 'yes' || originCountry === 'y'){
-  //console.log('You are incorrect!');
-  alert('You are incorrect! My country of origin is Kazakstan');
-}
-else if (originCountry === 'no' || originCountry === 'n'){
-  //console.log('Correct!');
-  alert('Correct. I am from Kazakhstan!');
-  totalScore++;
-}
-else{
-  //console.log('Sorry, that was an invalid answer to that question');
-  alert('Sorry, that was an invalid answer to that question');
+function q4() {
+  let originCountry = prompt('Question 4: Whas my country of origin Ukraine?  ').toLowerCase();
+  if (originCountry === 'yes' || originCountry === 'y'){
+    //console.log('You are incorrect!');
+    alert('You are incorrect! My country of origin is Kazakstan');
+  }
+  else if (originCountry === 'no' || originCountry === 'n'){
+    //console.log('Correct!');
+    alert('Correct. I am from Kazakhstan!');
+    totalScore++;
+  }
+  else{
+    //console.log('Sorry, that was an invalid answer to that question');
+    alert('Sorry, that was an invalid answer to that question');
+  }
 }
 
 //QUESTION 5
@@ -168,3 +170,4 @@ alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 q1();
 q2();
 q2();
+q4();
