@@ -96,48 +96,50 @@ function q5() {
 }
 
 // QUESTION 6
-for(let i=4; i>0; i--){
-  let userNum = parseInt(prompt(`Guess a number between 1 and 10, you have ${i} tries remaining:  `));
+function q6() {
+  for(let i=4; i>0; i--){
+    let userNum = parseInt(prompt(`Guess a number between 1 and 10, you have ${i} tries remaining:  `));
 
-  if (userNum===5){
-    alert('Correct!');
-    totalScore++;
-    break;
-  }
-  else if (userNum > 10 || userNum <0){
-    if (i===1){
-      alert('That was your last try, sorry! The correct answer was 5.');
+    if (userNum===5){
+      alert('Correct!');
+      totalScore++;
       break;
     }
-    else{
-      alert('That\'s not even between 1 and 10! Guess again: ');
+    else if (userNum > 10 || userNum <0){
+      if (i===1){
+        alert('That was your last try, sorry! The correct answer was 5.');
+        break;
+      }
+      else{
+        alert('That\'s not even between 1 and 10! Guess again: ');
+      }
     }
-  }
-  else if (userNum > 5){
-    if (i===1){
-      alert('That was your last try, sorry! The correct answer was 5.');
-      break;
+    else if (userNum > 5){
+      if (i===1){
+        alert('That was your last try, sorry! The correct answer was 5.');
+        break;
+      }
+      else{
+        alert('Too high! Guess again: ');
+      }
     }
-    else{
-      alert('Too high! Guess again: ');
+    else if (userNum < 5){
+      if (i===1){
+        alert('That was your last try, sorry! The correct answer was 5.');
+        break;
+      }
+      else{
+        alert('Too low! Guess again: ');
+      }
     }
-  }
-  else if (userNum < 5){
-    if (i===1){
-      alert('That was your last try, sorry! The correct answer was 5.');
-      break;
-    }
-    else{
-      alert('Too low! Guess again: ');
-    }
-  }
-  else {
-    if (i===1){
-      alert('That was your last try, sorry! The correct answer was 5.');
-      break;
-    }
-    else{
-      alert('That\'s not even a number! Guess again: ');
+    else {
+      if (i===1){
+        alert('That was your last try, sorry! The correct answer was 5.');
+        break;
+      }
+      else{
+        alert('That\'s not even a number! Guess again: ');
+      }
     }
   }
 }
@@ -174,3 +176,4 @@ q2();
 q2();
 q4();
 q5();
+q6();
