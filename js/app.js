@@ -78,19 +78,21 @@ function q4() {
 }
 
 //QUESTION 5
-let yearMoved = prompt('Question 5: Did I move to the US in 1995?  ');
-if (yearMoved === 'yes' || yearMoved === 'y'){
-  //console.log('You are incorrect!');
-  alert('You are incorrect! I moved to the US in 2000');
-}
-else if (yearMoved === 'no' || yearMoved === 'n'){
-  //console.log('Correct!');
-  alert('Correct. I cam from Kazakhstan in 2000!');
-  totalScore++;
-}
-else{
-  //console.log('Sorry, that was an invalid answer to that question');
-  alert('Sorry, that was an invalid answer to that question');
+function q5() {
+  let yearMoved = prompt('Question 5: Did I move to the US in 1995?  ');
+  if (yearMoved === 'yes' || yearMoved === 'y'){
+    //console.log('You are incorrect!');
+    alert('You are incorrect! I moved to the US in 2000');
+  }
+  else if (yearMoved === 'no' || yearMoved === 'n'){
+    //console.log('Correct!');
+    alert('Correct. I cam from Kazakhstan in 2000!');
+    totalScore++;
+  }
+  else{
+    //console.log('Sorry, that was an invalid answer to that question');
+    alert('Sorry, that was an invalid answer to that question');
+  }
 }
 
 // QUESTION 6
@@ -171,3 +173,4 @@ q1();
 q2();
 q2();
 q4();
+q5();
