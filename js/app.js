@@ -154,7 +154,7 @@ for (let i = 5; i > 0; i--){
     userGuess = prompt(`Incorrect. Let's see how many you can get right, you have ${i} tries remaining: `);
   }
 }
-alert(`Finished! Your score for Kirks vacation questionnaire is ${100*(score/6)}%`);
+alert(`Finished! Your score for Kirks vacation questionnaire is ${100*(score/6)}%. The places Kirk wanted to go for vacation were: ${vacay}`);
 //console.log('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 alert(`Your total score (from this whole questionnaire) for knowing about Kirk is a total of ${score+totalScore}/12, or a percentage of ${((score+totalScore)/12)*100}%`);
 alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
