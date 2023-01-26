@@ -1,8 +1,56 @@
-h1{
-  font-size: 9rem;
+* {
+  box-sizing:border-box;
 }
 
-ul{
+h1 {
+  font-size: 9rem;
+  text-align: center;
+}
+
+ul {
   list-style: disc;
   margin: 1rem;
 }
+
+span {
+  color:red;
+}
+
+div {
+  display: inline-block; /* makes the block display horizontally */
+  width: 25%; /* makes the block maximum with only take up 25% of the page */
+  /* float: left; can either do inline block or float, not both */
+}
+
+p {
+  clear: both; /*escaples a float*/
+}
+
+/* css class 
+.parent {
+  width: 80%; /* using % instead of px makes it shrink with the screen instead of always being a certain amount of pixels
+  margin-left: auto;
+  margin-right: auto;
+}
+
+CSS id
+div#box3 {
+  color: crimson;
+}
+
+css pseudoselectors 
+div:hover {
+  background-color: aquamarine;
+}
+
+div:first-child {
+  background-color: coral;
+}
+
+div:first-of-type { 
+  background-color: blanchedalmond;
+}
+
+div:nth-of-type(3) {
+  background-color: darksalmon;
+} */

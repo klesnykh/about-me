@@ -13,7 +13,11 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
+*First Lighthouse Score*
 ![LighthouseScore](img/lighthouse.png)
+
+*Lab 3 lighthouse score*
+![LighthouseScore](img/Lhouselab3.png)
 
 ### Reflections and Comments
 
