@@ -145,28 +145,30 @@ function q6() {
 }
 
 // QUESTION 7
-let vacay = ['cancun', 'bora bora', 'florida', 'rome', 'greece', 'california'];
-let userGuess = prompt('Guess where I want to go on vacation (you have 6 guesses, and you will be scored): ').toLowerCase();
-let score = 0;
-let userCorrect = false;
+function q7() {
+  let vacay = ['cancun', 'bora bora', 'florida', 'rome', 'greece', 'california'];
+  let userGuess = prompt('Guess where I want to go on vacation (you have 6 guesses, and you will be scored): ').toLowerCase();
+  let score = 0;
+  let userCorrect = false;
 
-for (let i = 5; i > 0; i--){
-  for (let j = 0; j<=vacay.length; j++){
-    if (userGuess === vacay[j]){
-      userCorrect = true;
-      vacay.splice(j,1);
+  for (let i = 5; i > 0; i--){
+    for (let j = 0; j<=vacay.length; j++){
+      if (userGuess === vacay[j]){
+        userCorrect = true;
+        vacay.splice(j,1);
+      }
+    }
+    if (userCorrect) {
+      userCorrect = false;
+      score++;
+      userGuess = prompt(`That's correct! Let's see how many you can get right, you have ${i} tries remaining: `);
+    }
+    else{
+      userGuess = prompt(`Incorrect. Let's see how many you can get right, you have ${i} tries remaining: `);
     }
   }
-  if (userCorrect) {
-    userCorrect = false;
-    score++;
-    userGuess = prompt(`That's correct! Let's see how many you can get right, you have ${i} tries remaining: `);
-  }
-  else{
-    userGuess = prompt(`Incorrect. Let's see how many you can get right, you have ${i} tries remaining: `);
-  }
+  alert(`Finished! Your score for Kirks vacation questionnaire is ${100*(score/6)}%. The places Kirk wanted to go for vacation were: ${vacay}`);
 }
-alert(`Finished! Your score for Kirks vacation questionnaire is ${100*(score/6)}%. The places Kirk wanted to go for vacation were: ${vacay}`);
 //console.log('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 alert(`Your total score (from this whole questionnaire) for knowing about Kirk is a total of ${score+totalScore}/12, or a percentage of ${((score+totalScore)/12)*100}%`);
 alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
@@ -177,3 +179,4 @@ q2();
 q4();
 q5();
 q6();
+q7();
