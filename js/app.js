@@ -42,19 +42,21 @@ function q2() {
   }
 }
 //QUESTION 3
-let doILikeSweets = prompt('Question 3: Do I like Sweets?  ').toLowerCase();
-if (doILikeSweets === 'yes' || doILikeSweets === 'y'){
-  //console.log('You are incorrect, I do not like sweets!');
-  alert('You are incorrect, I do not like sweets!');
-}
-else if (doILikeSweets === 'no' || doILikeSweets === 'n'){
-  //console.log('Correct! I am not much of a sweets guy.');
-  alert('Correct! I am not much of a sweets guy.');
-  totalScore++;
-}
-else{
-  //console.log('Sorry, that was an invalid answer to that question');
-  alert('Sorry, that was an invalid answer to that question');
+function q3() {
+  let doILikeSweets = prompt('Question 3: Do I like Sweets?  ').toLowerCase();
+  if (doILikeSweets === 'yes' || doILikeSweets === 'y'){
+    //console.log('You are incorrect, I do not like sweets!');
+    alert('You are incorrect, I do not like sweets!');
+  }
+  else if (doILikeSweets === 'no' || doILikeSweets === 'n'){
+    //console.log('Correct! I am not much of a sweets guy.');
+    alert('Correct! I am not much of a sweets guy.');
+    totalScore++;
+  }
+  else{
+    //console.log('Sorry, that was an invalid answer to that question');
+    alert('Sorry, that was an invalid answer to that question');
+  }
 }
 
 //QUESTION 4
@@ -164,4 +166,5 @@ alert(`Your total score (from this whole questionnaire) for knowing about Kirk i
 alert('Thank you ' + userName + ', hopefully you know Kirk a bit more!');
 
 q1();
+q2();
 q2();
